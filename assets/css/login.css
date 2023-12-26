@@ -1,0 +1,85 @@
+#container {
+  height: calc(100vh - 100px);
+  background-color: rgb(47, 95, 173);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 50px;
+  gap: 70px;
+}
+#container > h1 {
+  position: absolute;
+  font-size: 50px;
+  padding: 10px;
+  background-color: rgb(174, 6, 26);
+  border-radius: 20px;
+}
+#container > div {
+  padding: 50px;
+  width: 45%;
+  background-color: rgb(196, 67, 80);
+  margin-top: 90px;
+  border-radius: 20px;
+}
+#container > div > h1 {
+  margin: 12px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(2, 17, 20);
+  color: #041404;
+}
+#container > div .input {
+  margin: 30px 0;
+}
+#container > div .input p {
+  margin: 3px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+#container > div .input input {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid rgb(55, 129, 67);
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+#container > div .input input::placeholder {
+  opacity: 0.4;
+}
+#container > div .input input:hover {
+  border: 1px solid rgba(37, 108, 113, 0.479);
+}
+#container > div .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container > div .actions a {
+  font-size: 12px;
+  color: #4313aa;
+  cursor: pointer;
+  text-decoration: none;
+}
+#container > div .actions a:hover {
+  text-decoration: underline;
+}
+#container > div .actions button {
+  border: none;
+  color: rgb(139, 5, 99);
+  padding: 10px 20px;
+  background-color: #032257;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#container > div .actions button:active {
+  transform: scale(0.95);
+}
+#container > div:nth-child(3) .actions {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#container #signup-container {
+  display: none;
+}

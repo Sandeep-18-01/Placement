@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="/css/login.css" />
+
+<div id="container">
+  <h1>
+    <span style="color: rgb(140, 140, 14)"">
+      Welcome to Placement Cell!</span
+    >
+  </h1>
+
+  <div id="login-container">
+    <h1>Login</h1>
+    <form action="/employee/login/create-session" method="POST">
+      <div class="input">
+        <p>Email</p>
+        <input type="text" name="email" placeholder="Your email" required />
+      </div>
+      <div class="input">
+        <p>Password</p>
+        <input
+          type="password"
+          name="password"
+          placeholder="Your password"
+          required
+        />
+      </div>
+      <div class="actions">
+        
+        <b style="color: rgb(63, 44, 161); 
+        border-radius: 16px;
+        font-size: 16px; border: 2px solid #333; 
+        padding: 8px; background-color: #ffc0cb;">
+            <a  style="text-decoration: none; color: black;">Signup</a>
+          </b>
+          
+        <button>
+          <span>Login</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="signup-container">
+    <h1>Signup</h1>
+    <form action="/employee/signup/create" method="POST">
+      <div class="input">
+        <p>Name</p>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="input">
+        <p>Email</p>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="input">
+        <p>Password</p>
+        <input
+          type="password"
+          name="password"
+          placeholder="Your password"
+          required
+        />
+      </div>
+      <div class="actions">
+        <button>Signup</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>

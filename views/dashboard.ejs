@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+
+<section>
+    
+    <div id="registered-students">
+        <h1>Students</h1>
+    
+        <div>
+            <ul>
+                <% locals.students.forEach(student => { %>
+                    <li>
+                        <p><%= student.name %></p>
+                        <p>Status: <span class="<%= student.status %>"><%= student.status %></span></p>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+        
+    <div id="interviews">
+        <h1>Interviews</h1>
+        <div>
+            <ul>
+                <% locals.interviews.forEach(interview => { %>
+                    <a href="/employee/dashboard/interview/<%= interview.id %>">
+                        <li>
+                            <p><%= interview.company %></p>
+                            <p>Date of visit: <%= interview.date_of_visit.toLocaleDateString() %></p>
+                        </li>
+                    </a>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</section>

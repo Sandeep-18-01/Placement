@@ -1,7 +1,7 @@
 {
-  "name": "Placements",
+  "name": "placement_details",
   "version": "1.0.0",
-  "description": "Placements for companies and students",
+  "description": "A web app to manage students and their placements.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
